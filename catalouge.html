@@ -69,6 +69,23 @@
             color: white;
         }
 
+         section img:hover{
+            border-radius: 10px;
+            border-color: white;
+            border-width: 10px;
+            transform: scale(1.04);
+            transition: 0.5s;
+        }
+
+        section a:hover{
+            color: yellow;
+        }
+
+        .box input:hover{
+            background-color: black;
+            color: white;
+        }
+
         footer {
             background-color: gray;
             text-align: center;
@@ -94,8 +111,8 @@
     <h2> ✺ Complate Movie catalouge</h2>
     <p>use the form option below to filter and dshort through our film database</p>
     <h2> ✺ Filter & Search Options</h2>
-    <form>
-        <label>search title / director</label>
+    <form class="box">
+        <label>Search title / Director</label>
         <input type="text" id="search title / director" placeholder="e.g. nolan, iception...." >
     </form>
     <h3> ✺ select ganre:</h3>
