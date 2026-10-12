@@ -1,167 +1,299 @@
-<html>
-    <head>
-        <title>Movie Explorer - About & Contact</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer - About & Contact</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            background-color:rgb(39, 38, 38);
+            padding: 10px 50px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        h1{
+            margin: 25px;
+        }
+
+        h2 {
+            color: yellow;
+            margin-bottom: 15px;
+        }
+
+        section {
+            background-color: #222;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        th {
+            background-color: #333 !important;
+            color: yellow !important;
+        }
+
+        td {
+            background-color: #222 !important;
+            color: white !important;
+        }
+
+        .form-control,.form-select {
+            background-color: #333;
+            color: white;
+            border: 1px solid gray;
+        }
+
+        .form-control:focus,.form-select:focus {
+            background: #222;
+            color: white;
+            border-color: yellow;
+        }
+
+        .table-responsive {
+            background-color: #111;
+        }
+
+        .form-label {
+            color: yellow;
+        }
+
+        .btn-submit {
+            background-color: yellow;
+            color: black;
+        }
+
+        .btn-submit:hover {
+            background-color: orange;
+        }
+
+        @media (max-width: 600px) {
+            nav li {
+                margin: 8px 3px;
+            }
+
+            nav a {
+                font-size: 12px;
+                padding: 7px;
+            }
+
+            section {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
         <h1>🎬 Movie Explorer</h1>
         <nav>
-             <ul>
-                 <li><a href="./movieproject.html" target="_blank">Home</a></li> 
-                 <li><a href="./catalouge.html" target="_blank">Catalogue</a></li> 
-                 <li><a href="./movie details.html" target="_blank">Movie Details</a></li> 
-                 <li><a href="./about & contact.html" target="_blank">About & Content</a></li> 
+            <ul>
+                <li><a href="./movieproject.html">Home</a></li>
+                <li><a href="./catalouge.html">Catalogue</a></li>
+                <li><a href="./movie details.html">Movie Details</a></li>
+                <li><a href="./about & contact.html">About & Contact</a></li>
             </ul>
         </nav>
-        
-        <h2>About Movie Explorer Portal</h2>
-        <p>
-            The <B>Movie Explorer Portal</B> is an education static web development project crafted
-            specifically for <B>B.Sc(HOUNERS) 1st Year Web Desining & Web & Web Technologies</B> Lab & curriculum.
-        </p>
-        <p>
-            The Core goal of this Assignment is to teach students how to take a structured HTML document
-            containing real-world movie metadata and apply progressive styling layers using standard CSS,
-            frameworks like Bootstrap 5 or Tailwind CSS.
-        </p>
-        
-        <h2>Syllabus Progression Roadmap</h2>
-        <ol>
-            <li>
-                <b>UNIT - 1 HTML5 Markup :</b>
-                Structuring semantic web documents,metadata,lists,tables and form inputs.
-            </li>
-            <li>
-                <b>UNIT - 2 CSS Fundamentals :</b>
-                Applying external stylesheet,selectors,color rules and uderstanding the Box Model.(Margin,Padding,Border)
-            </li>
-            <li>
-                <b>UNIT - 3 CSS3 & Responsive Design :</b>
-                Creating fluid layouts using flaxbox,CSS grid,hovever transition and media query breakpoints.
-            </li>
-            <li>
-                <b>UNIT - 4 Responsive Frameworks :</b>
-                Refactoring custom CSS layout into framework container grids using Bootstrap 5/Taiwind CSS.
-            </li>
-        </ol>
-        <h2>12 - Week Lab Practical Timeliner</h2>
+    </header>
 
-        <table>
-        <tr>
-            <th>Week</th>
-            <th>Topic/Syllabus Module</th>
-            <th>Practical Student Focus</th>
-            <th>Lab Deliverable</th>
-        </tr>
-        <tr>
-            <td>Week 1-2</td>
-            <td>HTML Document Structure</td>
-            <td>Building HTML skeletons using semantic tags</td>
-            <td>Unstyle HTML Wireframes</td>
-        </tr>
-        <tr>
-            <td>Week-3</td>
-            <td>HTML Forms & Tables</td>
-            <td>Constructing contact inputs and spectables</td>
-            <td>Styled CSS Static Pages</td>
-        </tr>
-        <tr>
-             <td>Week 4-5</td>
-             <td>CSS Basic & Box Model</td>
-             <td>Custom typography,margins,padding,borders</td>
-             <td>Style Static Pages</td>
-        </tr>
-        <tr>
-            <td>Week 6-7</td>
-            <td>CSS3 Layout and Transition</td>
-            <td>Flexbox grid layouts,shadow,hover effects</td>
-            <td>Responsive Flexbox Grid</td>
-        </tr>
-        <tr>
-            <td>Week 8</td>
-            <td>CSS3 Layouts & Transitions</td>
-            <td>Writing @media query breakpoints for mobile</td>
-            <td>Mobile Responsive Site</td>
-        </tr> 
-        <tr>
-            <td>Week 9-10</td>
-            <td>Bootstrap 5/Tailwind Grid</td>
-            <td>Linling CDN,12-colum grid container setups</td>
-            <td>Framework Shelk</td>
-        </tr>
-        <tr>
-            <td>Week 11-12</td>
-            <td>QA,Audits & Final Defenses</td>
-            <td>Cross-browser testing,code cleanup,viva presentation</td>
-            <td>Final Project Submission</td>
-        </tr>
-        </table>
-        
-        <h2>User Feedback & Inquiry Forms</h2>
-        <p>
-            Please fill out the form below to submit your feedback or inquires regarding the portal :
-        </p>
-        <form>
-            <label>Full Name :</label>
-            <input type="text" placeholder="e.d. John Doe">
+    <main class="container">
 
-            <br><br>
+        <section>
+            <h2>✺ About Movie Explorer Portal</h2>
 
-            <label>Email Address :</label>
-            <input type="text" placeholder="name@example">
+            <p>
+                The Movie Explorer Portal is an education static web development project crafted specifically for
+                B.Sc(HOUNERS) 1st Year Web Desining & Web & Web Technologies Lab & curriculum.
+            </p>
 
-            <br><br>
+            <p>
+                The Core goal of this Assignment is to teach students how to take a structured HTML document containing
+                real-world movie metadata and apply progressive styling layers using standard CSS, frameworks like
+                Bootstrap 5 or Tailwind CSS.
+            </p>
+        </section>
 
-            <label>Inquiry Category :</label>
-            <select>
-                <option>General Feedback</option>
-                <option>Technical Issues</option>
-                <option>Suggestion</option>
-                <option>Other</option>
-            </select>
+        <section>
+            <h2>✺ Syllabus Progression Roadmap</h2>
+            <ol>
+                <li><b>UNIT 1 - HTML:</b>UNIT - 1 HTML5 Markup: Structuring semantic web documents, metadata,lists,tables and form inputs.</li>
+                <li><b>UNIT 2 - CSS:</b>CSS Fundamentals: Applying external stylesheet,selectors, color rules and uderstanding the Box Model. (Margin, Padding, Border)</li>
+                <li><b>UNIT 3 - Responsive Design:</b> CSS3 & Responsive Design: Creating fluid layouts using flaxbox, CSS grid,hovever transition and media query breakpoints.</li>
+                <li><b>UNIT 4 - Bootstrap:</b>Responsive Frameworks: Refactoring custom CSS layout into framework container grids using Bootstrap 5/Taiwind CSS.</li>
+            </ol>
+        </section>
 
-            <br><br>
+        <section>
+            <h2>✺ 12-Week Lab Practical Timeline</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Week</th>
+                        <th>Topic</th>
+                        <th>Practical Work</th>
+                    </tr>
 
-            <label>How would you rate this portal design?</label>
+                    <tr>
+                        <td>1-2</td>
+                        <td>HTML Basics</td>
+                        <td>Creating web pages</td>
+                    </tr>
 
-            <br>
-            <input type="radio" name="rating" value="5">5 - Excellent
-            <br>
-            <input type="radio" name="rating" value="4">4 - Good
-            <br>
-            <input type="radio" name="rating" value="3">3 - Average
-            <br>
-            <input type="radio" name="rating" value="2">2 - Needs Improvement
+                    <tr>
+                        <td>3</td>
+                        <td>Forms and Tables</td>
+                        <td>Creating forms and tables</td>
+                    </tr>
 
-            <br><br>
+                    <tr>
+                        <td>4-5</td>
+                        <td>CSS Basics</td>
+                        <td>Colours and spacing</td>
+                    </tr>
 
-            <label>Which features did you find most useful ?(Select All That Apply):</label>
+                    <tr>
+                        <td>6-7</td>
+                        <td>CSS Layouts</td>
+                        <td>Hover effects and layouts</td>
+                    </tr>
 
-            <br>
-            <input type="checkbox">Catalogue Card Layout
-            <br>
-            <input type="checkbox">Catalogue Card Layout
-            <br>
-            <input type="checkbox">Technical Spec Tables
-            <br>
-            <input type="checkbox">Mobile Responsive Navigation
-            <br>
-            <input type="checkbox">Feedback Contact Form  
+                    <tr>
+                        <td>8</td>
+                        <td>Media Queries</td>
+                        <td>Mobile-friendly pages</td>
+                    </tr>
 
-            <br><br>
+                    <tr>
+                        <td>9-10</td>
+                        <td>Bootstrap</td>
+                        <td>Responsive design</td>
+                    </tr>
 
-            <label>Your Detailed Feedback/Message :</label>
-            <br>
-            <textarea rows="6" cols="50" placeholder="Typed Your Detailed Message Here"></textarea>
+                    <tr>
+                        <td>11-12</td>
+                        <td>Final Project</td>
+                        <td>Testing and submission</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
 
-            <br><br>
+        <section>
+            <h2>✺ User Feedback & Inquiry Form</h2>
 
-            <input type="submit" value="Submit Feedback Inquiry">
-            <input type="reset"  value="Clear Form Inputs">
+            <form>
+                <label class="form-label">Full Name:</label>
+                <input type="text" class="form-control mb-3" placeholder="Enter your name" required>
 
-        </form>
-        
-        <p>
-            &copy;2026 Movie Explorer Portal-B.Sc(HOUNERS) 1st Year Web Desining Lab Assignment
-        </p>
-    </body>
+                <label class="form-label">Email Address:</label>
+                <input type="email" class="form-control mb-3" placeholder="name@example.com" required>
+
+                <label class="form-label">Inquiry Category:</label>
+                <select class="form-select mb-3">
+                    <option>General Feedback</option>
+                    <option>Technical Issues</option>
+                    <option>Suggestion</option>
+                    <option>Other</option>
+                </select>
+
+                <label class="form-label">Rate this website:</label>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="rating">
+                    <label class="form-check-label">5 - Excellent</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="rating">
+                    <label class="form-check-label">4 - Good</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="rating">
+                    <label class="form-check-label">3 - Average</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="rating">
+                    <label class="form-check-label">2 - needs improvement</label>
+                </div>
+
+                <label class="form-label mt-3">Useful Features:</label>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Movie Catalogue</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Movie Details</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Responsive Design</label>
+                </div>
+
+                <label class="form-label mt-3">Your Feedback:</label>
+                <textarea class="form-control mb-3" rows="4" placeholder="Write your message here"></textarea>
+
+                <button type="submit" class="btn btn-submit">
+                    Submit Feedback
+                </button>
+
+                <button type="reset" class="btn btn-secondary">
+                    Clear Form
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Movie Explorer Portal</p>
+        <p>Web Designing Lab Assignment</p>
+        <p>Department of Computer Science & Engineering</p>
+    </footer>
+</body>
 </html>
